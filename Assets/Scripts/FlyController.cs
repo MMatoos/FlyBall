@@ -13,29 +13,6 @@ public class FlyController : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*
-        if (Input.GetButtonDown("Jump"))
-        {
-            _rb.velocity = new Vector3(0, 0,0);
-            _rb.AddForce(transform.up * _jumpForce);
-        }
-                if (Input.GetKeyDown(KeyCode.A))
-        {
-            _rb.AddForce(-transform.right * _sideSpeed);
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            _rb.AddForce(transform.right * _sideSpeed);
-        }
-        */
-
-
-    }
-
     void FixedUpdate()
     {
         _rb.transform.position += Vector3.up * _jumpForce * Time.deltaTime;
